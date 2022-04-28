@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+    <title>Main Page</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <ul>
+                <li>
+                    <a href="#" title="Anasayfa" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#" title="Anasayfa">About us</a>
+                </li>
+                <li>
+                    <a href="#" title="Anasayfa">Privacy Policy</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dp-Btn" href="#" title="Anasayfa">Announcements
+                        <i class="fas fa-angle-down" style="margin-left: 7px;
+                                      vertical-align: bottom;"></i></a>
+                    <div class="dp-Content">
+                        <a href="#" title="HTML">RaspberyPi3</a>
+                        <a href="#" title="HTML">Python</a>
+                        <a href="#" title="HTML">HTML</a>
+                        <a href="#" title="HTML">CSS</a>
+                        <a href="#" title="HTML">Flask</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" title="Anasayfa">News</a>
+                </li>
+                <li>
+                    <a href="#" title="Anasayfa">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1>Anasayfa..</h1>
+        </div>
+        <div>
+            <p>
+                say�: {{ number }}
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
